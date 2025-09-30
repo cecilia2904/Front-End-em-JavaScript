@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+  <!-- 
+    FORMULÁRIO BÁSICO
+    - action: para onde os dados serão enviados (ex: "processa.php")
+    - method: GET (mostra dados na URL) ou POST (mais seguro, envia no corpo da requisição)
+  -->
+  <form >
+
+    <h1>Cadastro de Usuário</h1>
+
+    <!-- INPUT TEXT -->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" value="Maria"><br><br>
+
+    <!-- INPUT PASSWORD -->
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha"><br><br>
+
+    <!-- INPUT EMAIL -->
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <!-- INPUT NUMBER -->
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" min="0" max="120"><br><br>
+
+    <!-- INPUT CHECKBOX -->
+    <label>
+      <input type="checkbox" name="newsletter" value="sim"> Quero receber novidades
+    </label><br><br>
+
+    <!-- INPUT DATE -->
+    <label for="nascimento">Data de nascimento:</label>
+    <input type="date" id="nascimento" name="nascimento"><br><br>
+
+    <!-- INPUT TIME -->
+    <label for="hora">Horário preferido:</label>
+    <input type="time" id="hora" name="hora"><br><br>
+
+    <!-- INPUT FILE -->
+    <label for="foto">Enviar foto:</label>
+    <input type="file" id="foto" name="foto"><br><br>
+
+    <!-- INPUT URL -->
+    <label for="site">Seu site pessoal:</label>
+    <input type="url" id="site" name="site"><br><br>
+
+    <!-- INPUT RADIO (escolha única) -->
+    <p>Gênero:</p>
+    <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+    <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+    <label><input type="radio" name="genero" value="outro"> Outro</label><br><br>
+
+    <!-- INPUT COLOR -->
+    <label for="cor">Escolha uma cor favorita:</label>
+    <input type="color" id="cor" name="cor"><br><br>
+
+     <!-- TEXTAREA -->
+    <label for="mensagem">Mensagem / Observações:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Digite sua mensagem aqui..."></textarea><br><br>
+
+    <!-- INPUT RANGE -->
+    <label for="satisfacao">Nível de satisfação (0 a 10):</label>
+    <input type="range" id="satisfacao" name="satisfacao" min="0" max="10"><br><br>
+
+    <!-- SELECT -->
+    <label for="pais">País:</label>
+    <select id="pais" name="pais">
+      <option value="br">Brasil</option>
+      <option value="pt">Portugal</option>
+      <option value="us">Estados Unidos</option>
+      <option value="jp">Japão</option>
+    </select><br><br>
+
+    <!-- BOTÕES -->
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+    
+  </form>
+</body>
+</html>
